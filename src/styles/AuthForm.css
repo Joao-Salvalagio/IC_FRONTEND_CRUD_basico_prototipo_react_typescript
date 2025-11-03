@@ -1,0 +1,103 @@
+.login-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  min-height: calc(100vh - 70px); /* 70px é uma altura aproximada do header */
+}
+.login-card {
+  background-color: var(--surface);
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.login-card h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.login-card p {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+}
+.form-group { 
+  margin-bottom: 1.5rem; 
+}
+.form-group label { 
+  display: block; 
+  margin-bottom: 0.5rem; 
+  color: var(--text-secondary); 
+  font-size: 0.9rem; 
+  font-weight: 500; 
+}
+.form-group input { 
+  width: 100%; 
+  padding: 0.75rem; 
+  border: 1px solid var(--border-color); 
+  background-color: var(--background); 
+  border-radius: 8px; 
+  color: var(--text-primary); 
+  font-size: 1rem; 
+}
+.login-btn {
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--text-primary);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 1rem;
+}
+.login-btn:hover {
+  background-color: var(--primary-hover);
+}
+.login-btn:disabled {
+  background-color: var(--border-color);
+  color: var(--text-secondary);
+  cursor: not-allowed;
+}
+.error-message {
+  color: #E53E3E;
+  background-color: rgba(229, 62, 62, 0.1);
+  border: 1px solid #E53E3E;
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 1rem; /* Adicionado para espaçamento */
+}
+.register-link {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+.register-link a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* NOVO ESTILO ADICIONADO */
+.success-message {
+  color: #38A169; /* Verde */
+  background-color: rgba(56, 161, 105, 0.1);
+  border: 1px solid #38A169;
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}

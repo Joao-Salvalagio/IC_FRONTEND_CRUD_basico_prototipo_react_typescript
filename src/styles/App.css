@@ -1,0 +1,77 @@
+.main-header {
+  line-height: 1.5;
+  padding: 1rem 3rem;
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav { 
+  font-size: 1rem; 
+}
+
+.nav-left { 
+  display: flex; 
+  gap: 1.5rem; 
+  align-items: center; 
+}
+.nav-right { 
+  display: flex; 
+  gap: 1rem; 
+}
+
+/* Estilo base para links de texto e botões no nav */
+nav a, .nav-button {
+  display: inline-block;
+  padding: 0.5rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Link "Ideal-Computer" (Logo) */
+.nav-left a:first-child {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  padding-left: 0;
+}
+
+nav a:hover, .nav-button:hover { 
+  color: var(--primary); 
+}
+
+/* Estilo do link da página ativa (fornecido pelo React Router) */
+nav a.active {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Estilo para botões no header */
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  background-color: transparent;
+  font-family: inherit; /* Garante a mesma fonte */
+  font-size: 1rem;
+  cursor: pointer;
+}
+.nav-button:hover {
+  border-color: var(--primary);
+}
+.nav-button.primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--text-primary);
+}
+.nav-button.primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
